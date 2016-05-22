@@ -1,0 +1,10 @@
+base: cloudius/osv-openjdk8
+
+cmdline: >
+  /java.so
+  -jar /ratpack-example.jar
+
+build: ./gradlew build
+
+files:
+  /ratpack-example.jar: build/libs/ratpack-example-1.0-SNAPSHOT.jar
